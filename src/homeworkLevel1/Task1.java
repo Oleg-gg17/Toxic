@@ -1,4 +1,4 @@
-package homework;
+package homeworkJava_1;
 
 /**
  * Подсчёт чётных и нечётных чисел
@@ -11,17 +11,28 @@ public class Task1 {
     public static void main(String[] args) {
 
         int[] values = {0, 1, 2, 5, 7, 8, -35, -22, 14, 56, 10, 101};
-        int countEven = 0;
-        int countOdd = 0;
+        int evenElement = getElementEven(values);
+        int oddElement = getElementOdd(values);
+        System.out.println("Количество четных элементов: " + evenElement + " , количество нечетных элементов: " + oddElement);
+    }
 
+    public static int getElementEven(int[] values) {
+        int countEven = 0;
         for (int i = 0; i < values.length; i++) {
             if (values[i] % 2 == 0) {
                 countEven++;
-            } else {
+            }
+        }
+        return countEven;
+    }
+
+    public static int getElementOdd(int[] values) {
+        int countOdd = 0;
+        for (int i = 0; i < values.length; i++) {
+            if (values[i] % 2 != 0) {
                 countOdd++;
             }
         }
-        System.out.println("Количество четных элементов: " + countEven + " , количество нечетных элементов: " + countOdd);
+        return countOdd;
     }
-
 }
