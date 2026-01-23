@@ -1,4 +1,4 @@
-package homework;
+package homeworkJava_1;
 
 /**
  * Задача 4. Сумма положительных и отрицательных чисел
@@ -11,26 +11,28 @@ public class Task4 {
     public static void main(String[] args) {
 
         int[] values = {0, 1, 2, -35, -5};
-        int positive = positiveSumm(values);
-        int negative = negativeSumm(values);
+        int positive = positiveSum(values);
+        int negative = negativeSum(values);
         System.out.println("Сумма положительных чисел: " + positive + " Сумма отрицательных чисел: " + negative);
     }
-    public static int positiveSumm(int[] values) {
-        int positiveSum = 0;
+
+    public static int positiveSum(int[] values) {
+        int countPositive = 0;
         for (int i = 1; i < values.length; i++) {
             if (values[i] > 0) {
-                positiveSum += values[i];
+                countPositive += values[i];
             }
         }
-        return positiveSum;
+        return countPositive;
     }
-    public static int negativeSumm(int[] values) {
-        int negativeSum = 0;
+
+    public static int negativeSum(int[] values) {
+        int countNegative = 0;
         for (int i = 1; i < values.length; i++) {
             if (values[i] < 0) {
-                negativeSum += values[i];
+                countNegative += values[i];
             }
         }
-        return negativeSum;
+        return countNegative;
     }
 }
