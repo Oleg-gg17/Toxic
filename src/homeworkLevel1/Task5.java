@@ -1,4 +1,4 @@
-package homework;
+package homeworkJava_1;
 
 /**
  * Задача 5. Подсчёт гласных и согласных
@@ -11,6 +11,11 @@ public class Task5 {
     public static void main(String[] args) {
 
         String[] words = {"Hello", "World", "Java"}; // Пример массива строк
+        numberOfLatter(words);
+
+    }
+
+    public static void numberOfLatter(String[] words) {
 
         int vowelsLetter = 0;
         int consonantsLetter = 0;
@@ -30,10 +35,7 @@ public class Task5 {
                 }
             }
         }
-
         System.out.println("Гласных: " + vowelsLetter);
         System.out.println("Согласных: " + consonantsLetter);
     }
-
 }
-
