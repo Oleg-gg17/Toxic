@@ -9,16 +9,18 @@ public class Task7 {
      */
 
     public static void main(String[] args) {
-        double celsium = 67;
-        double fahrenheit;
-        switch (0){
+        double celsium = 67.0;
+        double temp = convertInFahrenheit(celsium);
+        System.out.println(celsium + " C = " + temp + " F");
+    }
+
+    public static double convertInFahrenheit(double celsium) {
+        switch (0) {
             case 0:
-                fahrenheit = (celsium * 1.8) + 32;
-                System.out.println(celsium + " C = " + fahrenheit + " F");
-                break;
+
             default:
                 System.out.println(" ");
         }
+        return (celsium * 1.8) + 32;
     }
-    }
-
+}
