@@ -1,4 +1,4 @@
-package homework;
+package homeworkJava_1;
 
 /**
  * Задача 6. Среднее значение массива
@@ -10,21 +10,31 @@ public class Task6 {
 
     public static void main(String[] args) {
         int[] values = {2, 3, 4, 5};
-        int num = 0; // Счетчик для элементов массива больше среднего значения
-        int sum = 0; // Переменная для хранения суммы
+        meanNumber(values);
+        numberOfElements(values);
+        System.out.println("Среднее арифметическое: " + meanNumber(values));
+        System.out.println("Количество элементов массива больше среднего значения: " + numberOfElements(values));
+    }
+
+    public static double meanNumber(int[] values) {
+        double sum = 0; // Переменная для хранения суммы
         int count = values.length; // Количество элементов
         // Суммируем все числа в массиве
-        for (int number : values) {
-            sum += number;
-        }
-        double average = (double) sum / count; // Вычисляем среднее
         for (int i = 0; i < values.length; i++) {
-            if (values[i] > average)
-                num++;
+            sum += values[i];
         }
-        System.out.println("Среднее арифметическое: " + average);
-        System.out.println("Количество элементов массива больше среднего значения: " + num);
+        double average = sum / count; // Вычисляем среднее
+        return average;
+    }
+
+    public static int numberOfElements(int[] values) {
+        int num = 0; // Счетчик для элементов массива больше среднего значения
+
+        for (int i = 0; i < values.length; i++) {
+            if (values[i] > meanNumber(values)) {
+                num++;
+            }
+        }
+        return num;
     }
 }
-
-
