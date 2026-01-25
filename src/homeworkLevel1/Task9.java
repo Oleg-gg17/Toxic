@@ -9,13 +9,23 @@ public class Task9 {
      */
 
     public static void main(String[] args) {
-        int month = 76;
+        int month = 6;
+        System.out.println(getSeason(month));
+    }
+
+    public static String getSeason(int month) {
+
         switch (month) {
-            case 12, 1, 2 -> System.out.println("Winter");
-            case 3, 4, 5 -> System.out.println("Spring");
-            case 6, 7, 8 -> System.out.println("Summer");
-            case 9, 10, 11 -> System.out.println("Autumn");
-            default -> System.out.println("Неверно указан номер месяца");
+            case 12, 1, 2:
+                return "Winter";
+            case 3, 4, 5:
+                return "Spring";
+            case 6, 7, 8:
+                return "Summer";
+            case 9, 10, 11:
+                return "Autumn";
+            default:
+                return "Неверно указан номер месяца";
         }
     }
 }
