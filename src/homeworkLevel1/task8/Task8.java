@@ -1,4 +1,4 @@
-package homeworkJava_1;
+package homeworkJava_1.task8;
 
 public class Task8 {
     /**

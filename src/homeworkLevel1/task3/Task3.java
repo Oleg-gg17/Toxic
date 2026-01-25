@@ -1,4 +1,4 @@
-package homeworkJava_1;
+package homeworkJava_1.task3;
 
 /**
  * Задача 3. Таблица умножения с условием

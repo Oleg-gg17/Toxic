@@ -1,4 +1,4 @@
-package homeworkJava_1;
+package homeworkJava_1.task1;
 
 /**
  * Подсчёт чётных и нечётных чисел

@@ -1,4 +1,4 @@
-package homeworkJava_1;
+package homeworkJava_1.task2;
 
 /**
  * Задача 2. Поиск максимального элемента массива

@@ -1,4 +1,4 @@
-package homeworkJava_1;
+package homeworkJava_1.task6;
 
 /**
  * Задача 6. Среднее значение массива

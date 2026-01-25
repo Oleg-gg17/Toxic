@@ -1,4 +1,4 @@
-package homeworkJava_1;
+package homeworkJava_1.task4;
 
 /**
  * Задача 4. Сумма положительных и отрицательных чисел

@@ -1,4 +1,4 @@
-package homeworkJava_1;
+package homeworkJava_1.task5;
 
 /**
  * Задача 5. Подсчёт гласных и согласных
